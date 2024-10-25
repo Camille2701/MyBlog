@@ -9,10 +9,10 @@
 </head>
 
 <body>
-    <div class="navbar" >
-        <a class="title" href="/"><img src="/phpMyBlog.svg" alt=""></a>
+    <header class="navbar" >
+        <a href="/"><img src="/phpMyBlog.svg" alt=""></a>
         <a class="btn" href="">Se connecter</a>
-    </div>
+    </header>
     <div class="articles">
 
         <h2>Les derniers articles</h2>

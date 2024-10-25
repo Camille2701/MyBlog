@@ -20,7 +20,8 @@
             <p class="author" >by <?= $article->author ?></p>
         </div>
 
-        <p><?= nl2br(htmlspecialchars($article->content)) ?></p> //affichage du contenu de l'article en respectant les sauts de ligne
+        <p><?= nl2br(htmlspecialchars($article->content)) ?></p> 
+        <!-- affichage du contenu de l'article en respectant les sauts de ligne -->
 
     </div>
 
