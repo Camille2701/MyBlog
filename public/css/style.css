@@ -1,0 +1,136 @@
+/* public/style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #313551;
+}
+
+h1 {
+    color: #333;
+    
+}
+h2 {
+    background: linear-gradient(to right, #AA6FF7, #806FF7);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 32px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+.navbar {
+    background-color: #454871;
+    display: flex;
+    padding: 10px 20px 10px 20px;
+    justify-content: space-between;
+    border-radius: 10px;
+    
+    .ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+.articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+
+    .article-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 0 ;
+
+        .article-li {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 20px 10px 20px;
+            padding: 10px 10px 10px 10px;
+            background-color: #454871;
+            color: white;
+            border-radius: 10px;
+            height: 100%;
+        }
+    }
+}
+.title {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 10px 0px 10px 0px;
+}
+
+.titre {
+    color: #5770ff;
+    font-size: 20px;
+}
+
+.titre:hover {
+    color: #AA6FF7;
+    transition: ease-in-out 0.2s;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #454871;
+    color: white;
+    height: 50px;
+    margin-top: 20px;
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 12px;
+    margin: 5px;
+    border: .125rem solid #5770ff; 
+    border-radius: 290394px;
+    color: #5770ff; 
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.btn:hover {
+    background-color: #5770ff;
+    color: #454871;
+}
+
+.btn::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-image: url('/login.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.btn:hover::before {
+    filter: invert(1);
+}
