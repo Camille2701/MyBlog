@@ -20,8 +20,14 @@ function getNamespace($class){
 }
 
 function slugifier($string) {
-    $string = iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $string); //gestion des accents
-    $string = preg_replace('/[^a-zA-Z0-9\s]/', '', $string); // gestion des caractères spéciaux
+    $string = iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $string);
+    // $string = strtr($string, [       Tentative de gestion des accents
+    //     'à' => 'a',
+    //     'é' => 'e',
+    //     'è' => 'e',
+    //     'ç' => 'c',
+    // ]);
+    $string = preg_replace('/[^a-zA-Z0-9\s]/', '', $string);
     $string = str_replace(' ', '-', $string);
     return strtolower($string);
 }

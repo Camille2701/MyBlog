@@ -32,4 +32,5 @@
     <div class="footer">
         <p>phpMyBlog - 2024</p>
         <a href=""></a>
+    </div>
 </body>

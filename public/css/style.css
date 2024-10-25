@@ -134,3 +134,25 @@ a:hover {
 .btn:hover::before {
     filter: invert(1);
 }
+.article {
+    display: block;
+    margin: 10px 20px 10px 20px;
+    padding: 10px 10px 10px 10px;
+    background-color: #454871;
+    color: white;
+    border-radius: 10px;
+    height: 100%;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        color: #ffffff;
+        margin-bottom: 0px;
+        .author {
+            color: #bfc2d4;
+            font-size: 13px;
+            margin-top: 0px;
+        }
+    }
+
+}
