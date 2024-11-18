@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <div class="navbar" >
         <a class="title" href="/"><img src="/phpMyBlog.svg" alt=""></a>
         <a class="btn" href="">Se connecter</a>
@@ -22,11 +23,11 @@
 
         <p><?= nl2br(htmlspecialchars($article->content)) ?></p> 
         <!-- affichage du contenu de l'article en respectant les sauts de ligne -->
-
     </div>
 
     <div class="footer">
         <p>phpMyBlog - 2024</p>
         <a href=""></a>
     </div>
+
 </body>
